@@ -1,6 +1,8 @@
-App = App || {};
+var App = App || {};
+App.Model = App.Model || {};
+App.Collection = App.Collection || {};
 
-Assignment = Backbone.Model.extend({
+App.Model.Assignment = Backbone.Model.extend({
     defaults: {
         name: "assignment 1",
         description: "the first class assignment",
@@ -11,6 +13,6 @@ Assignment = Backbone.Model.extend({
     }
 });
 
-Assignments = Backbone.Collection.extend({
-    model: Assignment
+App.Collection.Assignments = Backbone.Collection.extend({
+    model: App.Model.Assignment
 });

@@ -1,7 +1,9 @@
+var App = App || {};
+App.Model = App.Model || {};
+
 (function($){
     // create global App namespace
-    App = App || {};
 
     console.log("hello");
-    var klass = new Class();
+    var klass = new App.Model.Class();
 })(jQuery);
