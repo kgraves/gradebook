@@ -21,16 +21,16 @@
   },
 
   "icons": {
-    "16": "assets/images/small.png",
-    "48": "assets/images/medium.png",
-    "128": "assets/images/large.png"
+    "16": "assets/images/icon16.png",
+    "48": "assets/images/icon48.png",
+    "128": "assets/images/icon128.png"
   },
 
   /////////////////
   // Recommended //
   /////////////////
 
-  // "default_locale": "en",
+  "default_locale": "en",
 
   // display description for chrome store
   "description": "A dead simple gradebook extension for teachers",
