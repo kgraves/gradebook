@@ -1,5 +1,8 @@
+var App = App || {};
+App.Model = App.Model || {};
+App.Collection = App.Collection || {};
 
-Student = Backbone.Model.extend({
+App.Model.Student = Backbone.Model.extend({
     defaults: {
         name: "jane fonda",
         student_id: "12345",
@@ -19,6 +22,6 @@ Student = Backbone.Model.extend({
     },
 });
 
-Students = Backbone.Collection.extend({
-    model: Student
+App.Collection.Students = Backbone.Collection.extend({
+    model: App.Model.Student
 });
