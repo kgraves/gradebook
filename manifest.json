@@ -14,6 +14,18 @@
   //  [MAJOR_RELEASE].[MINOR_RELEASE]
   "version": "0.1",
 
+  "app": {
+    "launch": {
+      "local_path": "index.html"
+    }
+  },
+
+  "icons": {
+    "16": "assets/images/icon16.png",
+    "48": "assets/images/icon48.png",
+    "128": "assets/images/icon128.png"
+  },
+
   /////////////////
   // Recommended //
   /////////////////
@@ -22,14 +34,6 @@
 
   // display description for chrome store
   "description": "A dead simple gradebook extension for teachers",
-
-  // icons used for various uses
-  // TODO not sure where to put these yet...no path in docs
-  "icons": {
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
-  },
 
   // we actually don't need these at this point.
   // these are used to interact with pages within chrome
