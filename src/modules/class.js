@@ -1,9 +1,13 @@
 
 Class = Backbone.Model.extend({
+    defaults: {
+        name: "class 1",
+        description: "a class",
+        students: new Students(),
+        assignments: new Assignments()
+    },
     initialize: function() {
         console.log("Class: init");
-        var students = new Students();
-        var assignments = new Assignments();
 
         var ass1 = new Assignment({ name: "assignment 1", description: "first assignment", points: 10 });
         var ass2 = new Assignment({ name: "assignment 2", description: "second assignment", points: 20 });
@@ -17,7 +21,18 @@ Class = Backbone.Model.extend({
 
         console.log(students);
         console.log(assignments);
-    }
+    },
+    fetch: function () {
+
+    },
+    save: function () {
+        chrome.storage.sync.set({this.id: this}, function () {
+            console.log("Class: save");
+        });
+    },
+    destroy: function () {
+
+    },
 
 });
 

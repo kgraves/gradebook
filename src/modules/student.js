@@ -7,7 +7,16 @@ Student = Backbone.Model.extend({
     },
     initialize: function() {
         console.log("Student: init");
-    }
+    },
+    fetch: function () {
+
+    },
+    save: function () {
+
+    },
+    destroy: function () {
+
+    },
 });
 
 Students = Backbone.Collection.extend({

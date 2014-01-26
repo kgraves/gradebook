@@ -7,7 +7,16 @@ Assignment = Backbone.Model.extend({
     },
     initialize: function() {
         console.log("Assignment: init");
-    }
+    },
+    fetch: function () {
+
+    },
+    save: function () {
+
+    },
+    destroy: function () {
+
+    },
 });
 
 Assignments = Backbone.Collection.extend({
