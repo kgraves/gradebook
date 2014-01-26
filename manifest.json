@@ -14,11 +14,23 @@
   //  [MAJOR_RELEASE].[MINOR_RELEASE]
   "version": "0.1",
 
+  "app": {
+    "launch": {
+      "local_path": "index.html"
+    }
+  },
+
+  "icons": {
+    "16": "assets/images/small.png",
+    "48": "assets/images/medium.png",
+    "128": "assets/images/large.png"
+  },
+
   /////////////////
   // Recommended //
   /////////////////
 
-  "default_locale": "en",
+  // "default_locale": "en",
 
   // display description for chrome store
   "description": "A dead simple gradebook extension for teachers",
