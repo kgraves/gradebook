@@ -1,3 +1,4 @@
+App = App || {};
 
 Assignment = Backbone.Model.extend({
     defaults: {
