@@ -69,7 +69,7 @@
   "incognito": "split",
 
   // not sure, no docs
-  "input_components": ...,
+  // "input_components": ...,
 
   "offline_enabled": true,
 
@@ -98,5 +98,5 @@
   // packaged resources that are expected to be usable in the context of a web page"
   //
   // we might need this for assets?
-  "web_accessible_resources": [...]
+  // "web_accessible_resources": [...]
 }
