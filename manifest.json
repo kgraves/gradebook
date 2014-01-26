@@ -1,0 +1,102 @@
+{
+  //////////////
+  // Required //
+  //////////////
+
+  // forces manifest version 2. Version 1 is deprecated.
+  "manifest_version": 2,
+
+  // Primary identifier (display name) of the extension
+  "name": "gradebook",
+
+  // version number that the Autoupdate System
+  // version string format:
+  //  [MAJOR_RELEASE].[MINOR_RELEASE]
+  "version": "0.1",
+
+  /////////////////
+  // Recommended //
+  /////////////////
+
+  "default_locale": "en",
+
+  // display description for chrome store
+  "description": "A dead simple gradebook extension for teachers",
+
+  // icons used for various uses
+  // TODO not sure where to put these yet...no path in docs
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+
+  // we actually don't need these at this point.
+  // these are used to interact with pages within chrome
+  // "browser_action": {},
+  // "page_action": {},
+
+  //////////////
+  // Optional //
+  //////////////
+
+  // no info in the docs about this.
+  // I'm guessing it's for the chrome store
+  "author": "Jenny, Ian, and Kyle",
+
+  // uses the commands api. can add keyboard shortcuts for actions
+  // "commands": {
+    // "global": ...
+  // },
+
+  // handlers for accessing the filesystem with a file browser
+  "file_browser_handlers": [
+    {
+      "id": "upload",
+      // what the button will display
+      "default_title": "Upload gradebook file",
+      "file_filters": [
+        "filesystem:*.json"
+      ]
+    }
+  ],
+
+  // specify the homepage of the extension
+  // "homepage_url": "http://path/to/homepage",
+
+  // how the app will run in an incognito-tab
+  // see: http://developer.chrome.com/extensions/manifest/incognito.html
+  "incognito": "split",
+
+  // not sure, no docs
+  // "input_components": ...,
+
+  "offline_enabled": true,
+
+  // register a keyword with chrome's address bar
+  "omnibox": {
+    "keyword": "gradebook"
+  },
+
+  // might need this later for settings...?
+  // "options_page": "aFile.html",
+
+  // defines permissions for the extension
+  "permissions" : [
+    "fileBrowserHandler",
+    "storage"
+  ]
+
+  // I think we need this, but we'll figure it out...
+  // "storage": {
+    // "managed_schema": "schema.json"
+  // },
+
+  // from http://developer.chrome.com/extensions/manifest/web_accessible_resources.html
+  //
+  // "An array of strings specifying the paths (relative to the package root) of
+  // packaged resources that are expected to be usable in the context of a web page"
+  //
+  // we might need this for assets?
+  // "web_accessible_resources": [...]
+}
