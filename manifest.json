@@ -85,7 +85,7 @@
   "permissions" : [
     "fileBrowserHandler",
     "storage"
-  ],
+  ]
 
   // I think we need this, but we'll figure it out...
   // "storage": {
