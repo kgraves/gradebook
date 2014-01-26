@@ -92,9 +92,9 @@
   ]
 
   // I think we need this, but we'll figure it out...
-  // "storage": {
-    // "managed_schema": "schema.json"
-  // },
+  //"storage": {
+  //  "managed_schema": "schema.json"
+  //}
 
   // from http://developer.chrome.com/extensions/manifest/web_accessible_resources.html
   //
