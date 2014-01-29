@@ -89,7 +89,11 @@
   "permissions" : [
     "fileBrowserHandler",
     "storage"
-  ]
+  ],
+
+  // lets us use Handlebars which uses eval
+  // i.e. Handlebars.template(...)
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 
   // I think we need this, but we'll figure it out...
   //"storage": {

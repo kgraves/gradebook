@@ -4,6 +4,9 @@ App.Model = App.Model || {};
 (function($){
     // create global App namespace
 
+    // init foundation
+    $(document).foundation();
+
     /*
     var klass = new App.Model.Class();
 
@@ -27,7 +30,13 @@ App.Model = App.Model || {};
     });
     */
 
-    klass = new App.Model.Class({cid: "c1"});
+    var menu = new App.View.MenuBar();
+    menu.render();
+
+    var contentGrid = new App.View.ContentGrid();
+    contentGrid.render();
+
+    var klass = new App.Model.Class({cid: "c1"});
     console.log(klass.fetch());
 
 
